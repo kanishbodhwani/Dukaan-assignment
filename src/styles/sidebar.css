@@ -139,7 +139,8 @@
 
 .menubar__footer-info > span {
     font-size: var(--small-font-size);
-    color: var(--primary-color-light);
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 .menubar__footer-info > span:first-child {

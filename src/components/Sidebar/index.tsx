@@ -1,7 +1,7 @@
 import StoreInfo from "./StoreInfo";
 import { GoHome } from "react-icons/go";
 import { CiViewList, CiDeliveryTruck } from "react-icons/ci";
-import { HiMiniSquares2X2 } from "react-icons/hi2";
+import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { FaChevronRight } from "react-icons/fa";
 import { AiOutlineSound } from "react-icons/ai";
 import { HiOutlineChartBarSquare } from "react-icons/hi2";
@@ -13,7 +13,7 @@ import { PiLightningLight } from "react-icons/pi";
 import { MdOutlinePayments } from "react-icons/md";
 import { CiCreditCard2 } from "react-icons/ci";
 import "../../styles/sidebar.css";
-import { useState } from "react";
+import {  useState } from "react";
 
 export default function Sidebar({
   navbarRef,
@@ -74,7 +74,7 @@ export default function Sidebar({
               activeItem === "Products" ? "active" : ""
             }`}>
             <a href="#" className="menubar__link">
-              <HiMiniSquares2X2 size={"1.6rem"}/>
+              <HiOutlineSquares2X2 size={"1.6rem"}/>
               <span>Products</span>
             </a>
           </li>
@@ -109,8 +109,11 @@ export default function Sidebar({
             className={`menubar__item ${
               activeItem === "Payments" ? "active" : ""
             }`}>
-            <a href="#payments" className="menubar__link">
-              <MdOutlinePayments size={"1.6rem"}/>
+            <a href="#payments" className="menubar__link" style={{
+              padding: '10px'
+            }}>
+              {/* <MdOutlinePayments size={"1.6rem"}/> */}
+              <img src="/assets/Vector.png" alt="payment" style={{height: '1.2rem'}}/>
               <span>Payments</span>
             </a>
           </li>

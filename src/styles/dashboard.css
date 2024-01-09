@@ -70,12 +70,18 @@
 }
 
 .dashHeader__icons-speaker, .dashHeader__icons-comment {
-    padding: 8px;
+    padding: 10px;
     color: var(--text-color-light);
     background-color: var(--primary-color);
     border-radius: 50%;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.dashHeader__icons-speaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dashboard__overview {

@@ -26,7 +26,10 @@ export default function DashHeader({
       </div>
       <SearchBar dark={true} placeholder="Search features, tutorials, etc."/>
       <div className="dashHeader__icons">
-        <HiSpeakerphone size={"2.6rem"} className="dashHeader__icons-speaker"/>
+        {/* <HiSpeakerphone size={"2.6rem"} className="dashHeader__icons-speaker"/> */}
+        <div className="dashHeader__icons-speaker">
+          <img src="/assets/Group.png" alt="payment" style={{height: '1.3rem'}} />
+        </div>
         <FaCaretDown size={"2.6rem"} className="dashHeader__icons-comment"/>
       </div>
     </header>
