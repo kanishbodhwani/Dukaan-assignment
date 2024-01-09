@@ -1,0 +1,29 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.search__search_icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: var(--text-color-light);
+}
+
+.search > input {
+    height: 40px;
+    border-radius: 6px;
+    padding: 0px 40px 0px 40px;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .search > input {
+        width: 100% !important;
+    }
+}
